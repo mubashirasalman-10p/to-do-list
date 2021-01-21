@@ -1,17 +1,46 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './bootstrap.css';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+class AddNew extends React.Component{
+    render(){
+        return(
+        <form>
+            <input
+            type="text"
+            id="new-todo-input"
+            className="input input__lg"
+            name="text"
+            autoComplete="off"
+            />
+            <button type="submit" className="btn btn__primary btn__lg">
+            Add
+            </button>
+        </form>
+        );
+    }
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+class ItemCount extends React.Component {
+    render() {
+      return (
+          <div>
+              <h1 style={{color:"blue", textAlign:"center"}}>Total Items: {this.props.totalItems}</h1>
+          </div>
+      );
+    }
+  }
+
+  class Page extends React.Component{
+      render(){
+          return(
+              <div>
+              <AddNew/>
+              <ItemCount totalItems={0}/>
+              </div>
+          );
+      }
+  }
+
+  ReactDOM.render(<Page/>, document.getElementById("root"));
