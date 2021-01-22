@@ -22,3 +22,7 @@ form {
 .btn{
   background-color: #95aacc;
 }
+li {
+  padding-left: -4px;
+  margin-left: 10px;
+}

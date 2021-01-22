@@ -29,10 +29,10 @@ class TaskList extends React.Component{
                 <div class="card text-center" style={{width: "18rem"}}>
                     <div class="card-body">
                         <h5>Today's Tasks:</h5>
-                        <ul>
+                        <ol>
                             <li>Task One</li>
                             <li>Task Two</li>
-                        </ul>
+                        </ol>
                         <br></br>
                     </div>
                 </div>
