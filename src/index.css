@@ -1,3 +1,24 @@
 form {
     text-align: center;
+    margin-top: 5%;  
+    margin-left: 2%;
   }
+
+  #task-list{
+    text-align: center;
+  }
+  .card{
+    width: 300px;
+    /* margin:0 auto; */
+    border: 3px solid #586375;
+    float: none; 
+    margin-top: 5%;  
+    margin-left: 41%; 
+}
+#item-count{
+  margin-top: 5%; 
+  margin-left: 2%;
+}
+.btn{
+  background-color: #95aacc;
+}
